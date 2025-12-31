@@ -46,8 +46,7 @@ const StorefrontHero1 = () => {
   ];
 
   return (
-    // <div className="relative overflow-hidden bg-linear-to-br from-primary/5 to-background"></div>
-    <div className="relative overflow-hidden bg-linear-to-br from-amber-600 to-amber-50">
+    <div className="relative overflow-hidden bg-background">
       <div className="lg::py-20 relative z-10 container mx-auto flex flex-col items-center justify-between gap-12 px-4 py-16 lg:px-12 xl:flex-row xl:items-start">
         {/* Left Content */}
         <div className="mx-auto max-w-xl text-center lg:mx-0 xl:text-left">

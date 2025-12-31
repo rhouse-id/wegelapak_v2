@@ -4,13 +4,13 @@ import { Label } from "./ui/label";
 
 export default function FooterSection1() {
   return (
-    <footer className="mt-10 border-t border-border bg-card/95 py-10 font-sans backdrop-blur-sm">
+    <footer className="mt-10 border-t border-border bg-[var(--accent)] py-10 font-sans">
       <div className="container mx-auto flex flex-col items-start justify-between gap-10 px-6 md:flex-row md:items-center">
         <div className="flex w-full max-w-md flex-col gap-3">
-          <span className="text-lg font-semibold text-foreground sm:text-xl">
+          <span className="text-lg font-semibold text-[var(--accent-foreground)] sm:text-xl">
             WEGE Lapak
           </span>
-          <span className="text-sm text-muted-foreground sm:text-base">
+          <span className="text-sm text-[var(--accent-foreground)]/80 sm:text-base">
             Wegelapak adalah usaha UMKM lokal yang menghadirkan berbagai produk
             pilihan seperti makanan, minuman, dan hampers berkualitas dengan
             cita rasa khas serta kemasan menarik untuk berbagai kebutuhan.
@@ -19,7 +19,7 @@ export default function FooterSection1() {
             <div className="flex w-full max-w-xs flex-col">
               <Label
                 htmlFor="footer-subscribe"
-                className="mb-1 text-sm font-medium text-foreground"
+                className="mb-1 text-sm font-medium text-[var(--accent-foreground)]"
               >
                 Subscribe
               </Label>
@@ -27,24 +27,27 @@ export default function FooterSection1() {
                 id="footer-subscribe"
                 type="email"
                 placeholder="Enter your email"
-                className="w-full"
+                className="w-full bg-white text-[var(--accent)] border-none focus:ring-2 focus:ring-[var(--primary)]"
               />
             </div>
-            <Button type="submit" className="h-9 px-4 text-sm font-medium">
+            <Button
+              type="submit"
+              className="h-9 px-4 text-sm font-medium bg-[var(--primary)] text-white hover:bg-[var(--secondary)]"
+            >
               Subscribe
             </Button>
           </form>
         </div>
         <div className="justify-left flex w-full max-w-2xl flex-col gap-12 sm:flex-row">
           <div>
-            <h3 className="mb-2 text-base font-semibold text-foreground">
+            <h3 className="mb-2 text-base font-semibold text-[var(--accent-foreground)]">
               Home
             </h3>
             <ul className="space-y-1">
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   About Us
                 </a>
@@ -52,7 +55,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Collection
                 </a>
@@ -60,7 +63,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Blog & News
                 </a>
@@ -68,14 +71,14 @@ export default function FooterSection1() {
             </ul>
           </div>
           <div>
-            <h3 className="mb-2 text-base font-semibold text-foreground">
+            <h3 className="mb-2 text-base font-semibold text-[var(--accent-foreground)]">
               Security
             </h3>
             <ul className="space-y-1">
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Privacy Policy
                 </a>
@@ -83,7 +86,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   User Agreements
                 </a>
@@ -91,7 +94,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Copyright
                 </a>
@@ -99,14 +102,14 @@ export default function FooterSection1() {
             </ul>
           </div>
           <div>
-            <h3 className="mb-2 text-base font-semibold text-foreground">
+            <h3 className="mb-2 text-base font-semibold text-[var(--accent-foreground)]">
               Social Media
             </h3>
             <ul className="space-y-1">
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Instagram
                 </a>
@@ -114,7 +117,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Facebook
                 </a>
@@ -122,7 +125,7 @@ export default function FooterSection1() {
               <li>
                 <a
                   href="#"
-                  className="text-sm text-muted-foreground hover:text-foreground"
+                  className="text-sm text-[var(--accent-foreground)]/80 hover:text-[var(--accent-foreground)]"
                 >
                   Twitter
                 </a>
