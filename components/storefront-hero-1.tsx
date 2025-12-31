@@ -56,7 +56,7 @@ const StorefrontHero1 = () => {
           </div>
           <h1 className="mt-8 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-7xl">
             Dari Dapur Terbaik, Langsung{" "}
-            <span className="bg-linear-to-r from-amber-600 to-amber-300/70 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-amber-600 to-amber-300/100 bg-clip-text text-transparent">
               ke Rumah Anda
             </span>
           </h1>
